@@ -1,5 +1,13 @@
-<p><%= params[:question] %></p>
-<%= link_to "- You", "/ask" %>
+<h1>Stupid Coaching</h1>
 
-<p><%=@answer%></p>
-<%= link_to "- Your coach", "/answer" %>
+<div class="container">
+  <div class="chat">
+    <p><%= params[:question] %></p>
+    <%= link_to "- You", "/ask" %>
+  </div>
+
+  <div class="chat">
+    <p><%=@answer%></p>
+    <%= link_to "- Your coach", "/answer" %>
+  </div>
+</div>
